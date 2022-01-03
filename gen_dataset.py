@@ -98,7 +98,7 @@ def gen_neg_samples(path_pool, path_data, num_samples=10, min_sub_ratio=0.2, max
 
 
 if __name__ == '__main__':
-#    gen_pos_samples(path_pool, path_train, 5000)
+    gen_pos_samples(path_pool, path_train, 5000)
     gen_neg_samples(path_pool, path_train, 5000)
 
     gen_pos_samples(path_pool, path_test, 500)
