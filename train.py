@@ -250,6 +250,6 @@ if __name__ == '__main__':
         best_iou = checkpoint['best_iou']
         # best_iou = 0.4
 
-#    train(model, train_data_loader, test_data_loader, criterion=criterion,
-#          optimizer=optimizer, epochs=epochs, best_iou=best_iou)
+    train(model, train_data_loader, test_data_loader, criterion=criterion,
+          optimizer=optimizer, epochs=epochs, best_iou=best_iou)
     val_loss, val_iou = val(model, test_data_loader, criterion, True)
