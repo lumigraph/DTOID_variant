@@ -424,6 +424,10 @@ class Network(NetworkBase):
     def __init__(self):
         super(Network, self).__init__()
 
+        # debug info by Hyun Jin
+        self.conv1 = nn.Conv2d(3, 3, kernel_size=1, padding=0)
+        self.act1 = nn.ELU()
+
         # stage 1 networks
         self.template_feature_extractor_global = TemplateFeatExtractGlobal()
         self.image_feature_extractor = ImageFeatExtract()
